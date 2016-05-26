@@ -13,10 +13,22 @@ import android.widget.Button;
 
 public class MainActivity extends ListActivity {
 	
+
+
 	final int RESULT_CREATE_ACTIVITY =1;
 	
 	ItemListAdaptor itemListAdaptor;  //List adaptor
 	App mApplication;  //Application (use to save global for all application variables)
+	
+	
+	@Override
+	public void onBackPressed() {
+		mApplication.mTasks.clear();  // clear tasks on application exit
+		super.onBackPressed();
+	}
+
+	
+	
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
