@@ -11,7 +11,7 @@
         android:gravity="left"
         android:text="AAAAAAAAAAA"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/darkorange" />
+        android:textColor="@color/darkblue" />
     
         <TextView
         android:id="@+id/tvComment"
